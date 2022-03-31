@@ -53,7 +53,6 @@ public class BankAccount {
         try{
             System.out.printf("Attempting transfer... ");
             b1.withdraw(amount);
-
             b2.deposit(amount);
             System.out.printf("Transferred %d funds from b1 to b2. Account b1 has %d funds. Account b2 has %d funds.\\n", amount, b1.getFunds(), b2.getFunds());
         } catch(FundsException e){
